@@ -1,8 +1,16 @@
-console.log("Hello! Script is working.");
+// Reference to button created in HTML
+var btnTranslate = document.querySelector("#btn-translate");
 
-alert("This script works!");
+// Reference to textarea created in HTML
+var textInput = document.querySelector("#txt-input");
 
-var username = prompt("Enter username:");
-var outputMessage = "go away " + username;
+console.log(textInput);
 
-alert(outputMessage);
+// Listening to "click" event (i.e. detecting click on the button), and executing a function when event occurs (callback)
+function clickEventHandler() {
+    console.log("clicked!");
+    console.log("input", textInput.value);
+}
+
+btnTranslate.addEventListener("click", clickEventHandler)
+
