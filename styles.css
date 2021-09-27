@@ -3,6 +3,7 @@
 
 :root {
     --primary-color: #FCD34D;
+    --black: #1F2937;
 }
 
 body {
@@ -49,12 +50,14 @@ body {
 
 #output-div {
     height: 10vh;
-    border: 1px solid red;
+    border: 1px solid var(--black);
     display: block;
     width: 80%;
-    height: 10vh;
+    min-height: 10vh;
+    max-height: 20vh;
     margin: 1rem;
     padding: 1rem;
+    overflow: scroll;
 }
 
 .footer {
