@@ -3,7 +3,6 @@
 
 :root {
     --primary-color: #FCD34D;
-    --black: #1F2937;
 }
 
 body {
@@ -50,7 +49,7 @@ body {
 
 #output-div {
     height: 10vh;
-    border: 1px solid var(--black);
+    border: 1px solid black;
     display: block;
     width: 80%;
     min-height: 10vh;
@@ -64,11 +63,10 @@ body {
     background-color: var(--primary-color);
     color: black;
     padding: 1rem 1rem;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .footer-heading {
@@ -77,5 +75,5 @@ body {
 }
 
 .description {
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
